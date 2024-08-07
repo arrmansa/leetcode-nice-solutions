@@ -9,3 +9,8 @@ class str:
 
 
 __Serializer__._serialize = lambda _, x, __: None
+
+# Some fun parsing ideas
+```python
+np.fromstring('[[1,10,4,2],[9,3,8,7],[15,16,17,12]]'[2:-2].replace('],[', ''), dtype=int, sep=',')
+```
